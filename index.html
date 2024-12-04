@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-y-hidden  ">
+  <div class="w-full font-[monument] ">
+    <nav class="fixed top-0 left-0 w-full py-10 px-32 flex justify-between items-center" >
+      <h3 class="tracking-tight">deveb.co</h3>
+      <div class="flex justify-between gap-10 items-center">
+        <a class="text-sm" href="">About</a>
+        <a class="text-sm" href="">Profile</a>
+        <a class="text-sm" href="">Store</a>
+        <a class="text-sm" href="">Contact</a>
+      </div>
+    </nav>
+    <div class="landing w-full h-[200vh]">
+      <div class="w-full h-screen sticky ">
+        <div class="absolute top-[28%] left-[8%]">
+          <h1 class="text-5xl whitespace-nowrap">Design.Development.Branding</h1>
+        </div>
+        <canvas class=" pointer-events-none z-[-1] top-0 left-0" id="canvas"></canvas>
+      </div>
+    </div>
+    <div class="w-full h-screen bg-black"></div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
