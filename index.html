@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0 overflow-x-hidden">
+  <div class="w-full">
+    <nav class="fixed w-full top-0 left-1/2 -translate-x-1/2 z-50 backdrop-blur-md rounded-xl bg-white/1 shadow-[0_4px_30px_rgba(0,0,0,0.1)] border-white/30 border-1 py-2 px-32">
+      <div class="flex justify-between items-center py-2 px-10">
+        <h3 class="text-[antiquewhite] font-regular text-2xl tracking-tight">deveb.co</h3>
+        <div class="flex items-center gap-10 text-[antiquewhite] text-md">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Product</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="landing w-full h-[200vh]">
+      <div class="sticky w-full h-screen top-0 left-0 ">
+        <div class=" absolute top-[39%] text-[antiquewhite]  left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <h1 class="text-center text-7xl tracking-tighter font-bold">Design.Develop.Development</h1>
+        </div>
+      <canvas class="sticky pointer-events-none z-[-1]" id="canvas"></canvas>
+      <div class="text-white flex justify-around  gap-80 items-center px-20 ">
+        <div class="h-[10rem] w-[10rem]  rounded-full border-white border-2 mt-20 mb-10 flex justify-center items-center">
+          Innovative.
+        </div>
+        <div class="h-[10rem] w-[10rem]  rounded-full border-white border-2 mt-20 mb-10 flex justify-center items-center">
+          Reliable.
+        </div>
+        <div class="h-[10rem] w-[10rem]  rounded-full border-white border-2 mt-20 mb-10 flex justify-center items-center">
+          Trusted.
+        </div>
+      </div>
+      <div class="text-white">
+        <h1 class="text-[18rem] text-[antiquewhite] text-center">deveb</h1>
+      </div>
+      </div>
+  </div>
+  <div class="w-full h-screen bg-black">
+  </div>
+  </div>
+  <script src="./src/main.js" type="module"></script>
+</body>
+</html>
