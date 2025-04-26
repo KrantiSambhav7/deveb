@@ -132,6 +132,7 @@ const renderer = new THREE.WebGLRenderer({
   antialias: true
 });
 
+
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
@@ -191,3 +192,23 @@ window.addEventListener('resize', () => {
 });
 
 animate();
+
+const races = document.querySelector(".words");
+let width = races.offsetWidth;
+let scroll = width - window.innerWidth;
+
+const tween = gsap.to(races , {
+  x: -scroll,
+  ease: "none",
+  duration: 3,
+})
+
+const scrollTween = ScrollTrigger.create({
+  trigger: ".wrapper",
+  start: "top 10%",
+  end: "+=" + scroll,
+  animation: tween,
+  scrub: 1,
+  pin: true,
+  markers: true,
+});
